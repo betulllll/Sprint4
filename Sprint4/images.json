@@ -1,0 +1,18 @@
+{
+    "images": [
+      {"day": "Reward1", "src": "./img/eye.png"},
+      {"day": "Reward2", "src": "./img/coin.png"},
+      {"day": "Reward3", "src": "./img/gun1.png"},
+      {"day": "Reward4", "src": "./img/feel.png"},
+      {"day": "Reward5", "src": "./img/mask.png"},
+      {"day": "Reward6", "src": "./img/coin.png"},
+      {"day": "Reward7", "src": "./img/set.png"},
+      {"day": "Reward8", "src": "./img/gun2.png"},
+      {"day": "Reward9", "src": "./img/secure.png"},
+      {"day": "Reward10", "src": "./img/gun1.png"},
+      {"day": "Reward11", "src": "./img/eye.png"},
+      {"day": "Reward12", "src": "./img/set.png"},
+      {"day": "Reward13", "src": "./img/feel.png"},
+      {"day": "Reward14", "src": "./img/gun2.png"}
+    ]
+  }

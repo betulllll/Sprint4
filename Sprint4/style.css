@@ -1,0 +1,766 @@
+/* Common Properties */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.2;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+img:hover {
+  opacity: 0.9;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
+  transition: 3s all;
+  cursor: pointer;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+p {
+  color: rgb(243, 219, 219) !important;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+#youtube-video {
+ 
+  width: 840px;
+  /* Video genişliği */
+  height: 360px;
+  /* Video yüksekliği */
+  margin: 0 auto;
+  /* Ortala */
+  background-color: #840984;
+}
+
+#blog {
+  left: 50px;
+  position: relative;
+}
+
+/* Div */
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+
+.navbarr ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  top: 74px;
+  /* Assuming you meant pixels here */
+  width: 100%;
+}
+
+.navbarr li {
+  float: left;
+}
+
+.navbarr li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbarr li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbarr .active {
+  background-color: #e36906;
+}
+
+
+.navbarr2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  /* Assuming you meant pixels here */
+  width: 100%;
+}
+
+.navbarr2 li {
+  float: left;
+}
+
+.navbarr2 li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbarr2 li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navbarr2 .active {
+  background-color: #e36906;
+}
+
+
+.login {
+  top: 400px;
+}
+
+
+
+/* Search Box and Button styles */
+.search-container {
+  position: absolute;
+  top: 20px;
+  /* Adjust top position as needed */
+  left: 70%;
+  /* Position from left 50% */
+  transform: translateX(-50%);
+  /* Center the container horizontally */
+  text-align: center;
+  /* Center-align the form elements */
+}
+
+.search-form {
+  display: flex;
+  /* Use flexbox layout */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  max-width: 600px;
+  /* Adjust max-width as needed */
+  margin-left: 1px;
+  /* Center horizontally */
+}
+
+.search-form input[type="search"] {
+  width: 500px;
+  /* Adjust width as needed */
+  padding: 6px;
+  /* Adjust padding as needed */
+}
+
+.search-form button {
+  margin-left: 10px;
+  /* Adjust margin as needed */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  left: 500px;
+  position: absolute;
+}
+
+.string {
+  color: #e36906;
+}
+
+.btn {
+  background-color: #e36906;
+  border: none;
+  color: rgb(250, 245, 245);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.my_clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.myHeading {
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.9px rgba(225, 114, 10, 0.9);
+  opacity: 0.5;
+}
+
+.myHeading2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0.8px 0.9px rgba(225, 114, 10, 0.9);
+  opacity: 0.7;
+}
+
+/* New Button Container Styles */
+.separate-button-container {
+  position: relative;
+  text-align: left;
+  margin-top: 150px;
+  padding-left: 20px;
+}
+
+.separate-button {
+  position: absolute;
+  bottom: 100;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: -65px;
+  padding: 25px 35px;
+  background-color: #e36906;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.post-textbox {
+  padding: 50px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  border: 3px solid #d6bb94;
+  border-radius: 10px;
+  font-size: 25px;
+  width: 350px;
+  /* Adjust width as needed */
+  background-image: url("./img/Image.png"), url("./img/Video.png");
+  /* Paths to your PNG images */
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, calc(100% - 0px) calc(100% - 60px);
+  /* Adjust positions to bottom right */
+  background-size: 47px auto, 45px auto;
+  /* Adjust sizes as needed */
+}
+
+/* New styles for images inside text box */
+.image1 {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  /* Adjust image width as needed */
+  height: auto;
+  background-image: url("./img/Video.png");
+  background-size: cover;
+}
+
+.image2 {
+  position: absolute;
+  bottom: 5px;
+  right: 60px;
+  width: 50px;
+  /* Adjust image width as needed */
+  height: auto;
+  background-image: url("./img/Image.png");
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  /* Adjust top position as needed */
+  left: 10px;
+  /* Adjust left position as needed */
+  width: 200px;
+  /* Adjust width as needed */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+
+
+/* Adjustments for logo and search container */
+.logo-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-container {
+  display: inline-block;
+  vertical-align: right;
+}
+
+/* games css begins */
+#games {
+  margin-top: 50px;
+  /* Adjust margin as needed */
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+/* Slick overrides */
+.slick-slider .game-item {
+  margin: 0 10px;
+  /* Adjust spacing between slides */
+}
+
+.slick-slider .game-img {
+  width: auto;
+  /* Adjust width as needed */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.slick-slider .game-img:hover {
+  transform: scale(1.1);
+  /* Adjust scale on hover */
+}
+
+.slick-slider .game-name {
+  font-weight: bold;
+  font-size: 30px;
+  /* Adjust font size as needed */
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 25px;
+  /* Adjust spacing between image and name */
+}
+
+/* games css ends */
+
+.game-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.game-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.game-button:hover {
+  transform: scale(1.1);
+  /* Adjust scale as needed */
+}
+
+/* games css ends */
+.game-img {
+  width: 100px;
+  /* Adjust width as needed */
+  height: auto;
+  margin-right: 10px;
+  /* Adjust spacing between games */
+  transition: transform 0.3s ease;
+}
+
+.game-img:hover {
+  transform: scale(1.2);
+  /* Increase scale on hover */
+}
+
+.game-img:target {
+  transform: scale(1.2);
+  /* Increase scale on click */
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  /* Adjust as needed */
+}
+
+.game-item {
+  text-align: center;
+  margin-bottom: 20px;
+  /* Adjust as needed */
+}
+
+.game-img {
+  display: block;
+  margin: 0 auto;
+  /* Centers the image */
+}
+
+.game-name {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  /* Adjust font size as needed */
+  color: #333;
+  /* Adjust color as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Add text shadow */
+  margin-top: 15px;
+  /* Adjust spacing between image and name */
+}
+
+.tools-container {
+  text-align: center;
+  margin-bottom: 20px;
+  /* Spacing between tools text and buttons */
+}
+
+.tools-text {
+  display: block;
+  font-weight: 800;
+  font-size: 30px;
+  /* Adjust font size as needed */
+  color: #48086a;
+  /* Adjust color as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Add text shadow */
+  margin-bottom: 15px;
+
+  margin-left: 15px;
+
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tool-button {
+  margin: 0 30px;
+  /* Adjust margin as needed */
+}
+
+.tool-button img {
+  width: 50px;
+  /* Adjust width as needed */
+  height: 50px;
+
+}
+
+/* Style for the tools box */
+.tools-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Adjust the position to the right */
+  margin-top: 160px;
+  /* Adjust margin-top as needed */
+  padding: 15px;
+  /* Add padding as needed */
+  border: 2px solid #e36906;
+  border-radius: 15px;
+  background-color: #eae7e7;
+  max-width: 450px;
+  height: 170px;
+  margin-right: 50px;
+}
+
+
+.tool-name {
+  margin-top: 5px;
+  /* Adjust margin as needed */
+}
+
+.tool-container img {
+  width: 100px;
+  /* Adjust width as needed */
+  height: auto;
+}
+
+/* For events*/
+/* Add this CSS to your existing styles */
+
+.box-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 700px;
+}
+
+.box {
+  width: 400px;
+  height: 100px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* Adjust margin-bottom as needed */
+
+}
+
+.box-heading {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.box-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* CSS: Add styles for the inner box */
+
+/* For events*/
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.frame {
+  position: absolute;
+  border: 2px solid #000;
+  background-color: #e36906;
+  padding: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+  margin-left: 1050px;
+  border-radius: 10px;
+  /* Add this line to hide the frame initially */
+  transform: translateX(100%);
+  /* Add transition for smooth animation */
+  transition: transform 1s ease-out;
+}
+
+/* Add this class in JavaScript when the frame is in view */
+.frame.in-view {
+  transform: translateX(0);
+}
+
+
+.box1-container {
+  display: flex;
+  flex-direction: column;
+  /* Change flex direction to column */
+  align-items: flex-end;
+  /* Align items to the right */
+
+}
+
+.box1-text {
+  size: 14px;
+
+  color: #ffffffc6;
+}
+
+.box1-heading {
+  color: #f9f9f9;
+  font-weight: bolder;
+  size: 30px;
+  font-style: italic;
+}
+
+.box1 {
+  /* Remove margin and set width to 100% to take full width */
+  flex: 0 0 100%;
+  margin: 10px;
+  /* Adjust padding as needed */
+  padding: 20px;
+  border: 2px solid #48086a;
+  background-image: url('./img/payday2background.jpg');
+  /* Add your background image path here */
+  background-size: cover;
+  /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  /* Prevent background image from repeating */
+  box-sizing: border-box;
+  animation: slideInFromRight 3s ease-out;
+  width: 400px;
+}
+
+/* CSS for box background */
+.box1:nth-child(1) {
+  background-image: url('./img/payday2background.jpg');
+  /* Replace 'path/to/first_image.jpg' with the path to your desired image for Box 1 */
+}
+
+.box1:nth-child(2) {
+  background-image: url('./img/dota2background.jpg');
+  /* Replace 'path/to/second_image.jpg' with the path to your desired image for Box 2 */
+}
+
+.box1:nth-child(3) {
+  background-image: url('./img/witcherbackground.jpeg');
+  /* Replace 'path/to/third_image.jpg' with the path to your desired image for Box 3 */
+}
+
+.box1:nth-child(4) {
+  background-image: url('./img/payday2background2.webp');
+  /* Replace 'path/to/fourth_image.jpg' with the path to your desired image for Box 4 */
+}
+
+.card-img {
+  width: 1200px;
+  height: 300px;
+
+}
+
+
+/*######################################################*/
+
+
+/* Footer */
+footer {
+  min-height: 4rem;
+  width: auto;
+  text-align: center;
+  color: rgb(249, 244, 244);
+  background-color: #111;
+  padding: 30px;
+}
+
+
+.container {
+  background-color: rebeccapurple;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 12px 32px;
+  position: relative;
+  top: 100px;
+  left: 180px;
+}
+
+.container2 {
+  background-color: rebeccapurple;
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 12px 32px;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 88%;
+  padding: 0.5rem;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  text-align: center;
+}
+
+.form h1 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.form-in {
+  margin-bottom: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.form-in:focus {
+  outline: none;
+}
+
+.form-in::placeholder {
+  color: #aaa;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form button {
+  font-weight: bold;
+  cursor: pointer;
+  color: rebeccapurple;
+  font-size: 1.1rem !important;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+.show-map {
+  display: block; 
+  margin: 20px auto;
+  position: relative;
+  top: 120px; 
+  background-color: white;
+  color: rebeccapurple;
+  padding: 30px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.show-map:hover {
+  background-color: rgb(216, 207, 220); 
+}
